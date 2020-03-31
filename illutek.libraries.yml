@@ -1,0 +1,10 @@
+globalstyle:
+  css:
+    theme:
+      dist/css/style.css: {}
+
+java:
+  js:
+    dist/js/all.js: {}
+  dependencies:
+    - core/jquery

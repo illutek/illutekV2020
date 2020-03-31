@@ -1,0 +1,28 @@
+// /////////////////////////
+// @@ VARIABLES
+// ////////////////////////
+
+$colors: (
+  accent: rgb(5, 180, 249),
+  text-clr: rgb(85, 106, 135),
+  gray: rgb(51, 51, 51),
+  white: rgb(255, 255, 255),
+  near-white: rgb(248, 248, 248),
+  black: rgb(0, 0, 0),
+  footer-clr: rgb(00, 31, 55)
+);
+
+// FONTS VARIABLES
+$ff-sans: 'Roboto', sans-serif;
+$ff-light: 'Robot-light', sans-serif;
+$ff-size: 1.6rem;
+$fw-normal: 400;
+$fw-bold: 700;
+$line-height: 1.8;
+
+// LAYOUT VARIABLES
+$margin-b: 3rem;
+$margin-bb: 6rem;
+
+// OTHER
+$trans-speed: .3s;

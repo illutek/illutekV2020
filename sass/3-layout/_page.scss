@@ -1,0 +1,22 @@
+// /////////////////////////
+// @@ PAGE LAYOUT
+// ////////////////////////
+
+.main-wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include mq(tablet) {
+    width: 60rem;
+  }
+
+  @include mq(desktop) {
+    width: 80vw;
+  }
+}

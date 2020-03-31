@@ -1,0 +1,54 @@
+// Used namespaces
+// Format with BEM
+// o-object-name[<element>|<modifier>] {}
+//
+// Regions: .r
+// Components: .c
+// Content/node: .n
+// Utilities: .u
+
+// https://sass-lang.com/documentation/at-rules/import#index-files
+// would have liked to omit the index as described in the link above
+// need to find out more "Compatibility with Dart Sass"?
+
+// ================================
+// @@ ABSTRACTS
+// ================================
+
+@import "1-abstracts/index";
+
+// ================================
+// @@ BASE
+// ================================
+
+@import "2-base/index";
+
+// ================================
+// @@ LAYOUT
+// ================================
+
+@import "3-layout/index";
+
+// ================================
+// @@ REGIONS
+// ================================
+
+@import "4-regions/index";
+
+// ================================
+// @@ COMPONENTS
+// ================================
+
+@import "5-components/index";
+
+// ================================
+// @@ CONTENT
+// ================================
+
+@import "6-content/index";
+
+// ================================
+// @@ TRUMPS
+// ================================
+
+@import "7-trumps/index";
