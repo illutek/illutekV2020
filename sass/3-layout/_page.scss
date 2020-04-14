@@ -9,14 +9,7 @@
 
 .container {
   max-width: 140rem;
-  padding: 0 2rem;
+  width: 90vw;
   margin: 0 auto;
 
-  @include mq(tablet) {
-    width: 60rem;
-  }
-
-  @include mq(desktop) {
-    width: 80vw;
-  }
 }

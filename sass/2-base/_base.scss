@@ -25,7 +25,7 @@ html, body {
 body {
 	box-sizing: border-box;
 	overflow-x: hidden;
-  background-color: map-get($colors, white);
+	background-color: map-get($colors, gray);
 }
 
 a {

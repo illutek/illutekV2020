@@ -60,6 +60,6 @@ html {
 
 body {
 	font-size: $ff-size;
-	color: map-get($colors, text-clr);
+	color: map-get($colors, white);
 	line-height: $line-height;
 }

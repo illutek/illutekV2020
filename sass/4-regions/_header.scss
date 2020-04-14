@@ -1,0 +1,78 @@
+// /////////////////////////
+// @@ HEADER
+// ////////////////////////
+
+.header {
+  position: relative;
+
+  &__video {
+    height: 100vh;
+  }
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+    background-color: rgba(map-get($colors, accent), .8);
+    background-image: url(../images/face.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+  }
+
+  &__site-name {
+    padding: 0 2rem;
+  }
+  
+  &__aboutme {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+	&__title {
+		font: {
+			size: 4.8rem;
+			weight: $fw-bold;
+		}
+		line-height: 4.8rem;
+
+		&:not(:last-child) {
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__down-arrow {
+		display: flex;
+    position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		animation: updown 1.9s ease-out infinite;
+	}
+}
+
+@keyframes updown {
+	0% {
+		bottom: 2rem;
+	}
+	10% {
+		bottom: 2rem;
+	}
+	20% {
+		bottom: 2rem;
+	}
+	50% {
+		bottom: 2.5rem;
+	}
+	90% {
+		bottom: 2.5rem;
+	}
+	100% {
+		bottom: 2rem;
+	}
+}
