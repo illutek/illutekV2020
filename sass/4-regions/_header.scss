@@ -3,14 +3,22 @@
 // ////////////////////////
 
 .header {
-  position: relative;
+	position: relative;
+	
 
   &__video {
     height: 100vh;
+		position: fixed;
+
+		transition: all .5s ease-in-out;
+		
+		&__remove {
+		  opacity: 0;
+		}
   }
 
 	&__overlay {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -19,7 +27,26 @@
     background-image: url(../images/face.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: cover;
+		background-size: cover;
+
+		transition: all 1s ease-in-out;
+		
+		&__remove {
+			opacity: 0;
+		}
+
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+		height: 100vh;
+		
+		&__remove {
+			transition: all 1.5s;
+			opacity: 0;
+		}
 
   }
 
@@ -53,6 +80,11 @@
 		left: 50%;
 		transform: translateX(-50%);
 		animation: updown 1.9s ease-out infinite;
+	}
+
+	&__replacement {
+		height: 75vh;
+
 	}
 }
 

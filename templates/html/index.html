@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../../css/style.css">
   <title>Illutek</title>
 </head>
@@ -11,36 +12,34 @@
 <body>
   <header class="header">
 
+    <div class="header__content">
+
+      <div class="header__site-name">
+        <p class="c-site-name">illutek</p>
+      </div>
+      <div class="header__aboutme" id="top">
+        <p class="header__title">
+          Mijn naam is Stefan & als hobby
+        </p>
+        <p class="header__title">Front-end and Drupal</p>
+      </div>
+    </div>
+
     <video autoplay loop class="header__video">
       <source src="../../video/MP4/Busy.mp4" type="video/mp4">
     </video>
 
     <div class="header__overlay">
 
-      <!-- <div class="container"> -->
-
-        <div class="header__site-name">
-          <p class="c-site-name">illutek</p>
-        </div>
-
-        <div class="header__aboutme">
-          <p class="header__title">
-            Mijn naam is Stefan & als hobby
-          </p>
-          <p class="header__title">Front-end and Drupal</p>
-        </div>
-
-        <div class="header__down-arrow">
-          <a href="#why-drupal" class="c-arrow-down"></a>
-        </div>
-
-      <!-- </div> -->
-      <!-- end container -->
+      <div class="header__down-arrow">
+        <a href="#why-drupal" class="c-arrow-down"></a>
+      </div>
 
     </div>
     <!-- end header__overlay -->
 
   </header>
+  <div class="header__replacement"></div>
 
   <section class="why-drupal" id="why-drupal">
     <h1 class="heading-one">Waarom drupal</h1>
@@ -168,6 +167,8 @@
       <p>© illutek 2020 - 2020</p>
     </div>
   </footer>
+
+  <script src="../../dist/js/all.js"></script>
 </body>
 
 </html>

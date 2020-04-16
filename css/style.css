@@ -138,9 +138,13 @@ body {
 .header {
   position: relative; }
   .header__video {
-    height: 100vh; }
+    height: 100vh;
+    position: fixed;
+    transition: all .5s ease-in-out; }
+    .header__video__remove {
+      opacity: 0; }
   .header__overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -149,7 +153,18 @@ body {
     background-image: url(../images/face.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: cover; }
+    background-size: cover;
+    transition: all 1s ease-in-out; }
+    .header__overlay__remove {
+      opacity: 0; }
+  .header__content {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh; }
+    .header__content__remove {
+      transition: all 1.5s;
+      opacity: 0; }
   .header__site-name {
     padding: 0 2rem; }
   .header__aboutme {
@@ -170,6 +185,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     animation: updown 1.9s ease-out infinite; }
+  .header__replacement {
+    height: 75vh; }
 
 @keyframes updown {
   0% {
