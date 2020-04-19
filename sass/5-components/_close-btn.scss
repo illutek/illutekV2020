@@ -1,0 +1,16 @@
+// //////////////////////////////
+// @@ CLOSE BUTTON
+// //////////////////////////////
+
+.c-close-btn {
+
+	img {
+		width: 2.6rem;
+		height: auto;
+	}
+
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}

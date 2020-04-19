@@ -1,0 +1,19 @@
+// /////////////////////////
+// @@ NODE WHY-DRUPAL
+// ////////////////////////
+
+.n-why-drupal {
+  
+  &__node {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $margin-bb;
+  }
+
+  &__icon {
+    width: 6.4rem;
+  }
+}

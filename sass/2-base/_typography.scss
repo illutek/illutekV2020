@@ -63,3 +63,39 @@ body {
 	color: map-get($colors, white);
 	line-height: $line-height;
 }
+
+.heading-two {
+  font: {
+    size: 4.8rem;
+    weight: $fw-bold;
+  };
+  text: {
+    transform: uppercase;
+  }
+  position: relative;
+  margin-left: -3rem;
+
+  &::after {
+    content: '';
+    background-color: map-get($colors, accent);
+    height: 6px;
+    width: 3rem;
+    position: absolute;
+    top: 3.8rem;
+    margin-left: 3px;
+  }
+
+  &__sub-title {
+    text-align: right;
+    margin-right: -3.3rem;
+  }
+
+}
+
+.heading-three {
+  font: {
+    size: 4rem;
+    weight: $fw-bold;
+  };
+  text-transform: uppercase;
+}
