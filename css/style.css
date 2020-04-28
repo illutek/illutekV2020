@@ -276,9 +276,11 @@ body {
   color: white;
   font-size: 4rem;
   position: absolute;
-  top: 2rem;
+  top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  height: 100%;
+  cursor: pointer; }
 
 .n-links__screenshot-piece {
   background-color: #05b4f9; }

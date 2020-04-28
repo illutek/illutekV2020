@@ -8,16 +8,12 @@
 
   var linkModal = document.querySelector('.n-links__title');
   var closeModal = document.querySelector('.c-close-btn');
-  var overlayModal = document.querySelector('.n-links__modal-bcg--visible');
+  var overlayModal = document.querySelector('.n-links__modal-bcg--hidden');
 
-  function hideModal() {
-    
-  }
-
-  console.log(linkModal);
+  // console.log(showModal);
 
   function showModal() {
-    overlayModal.classList.add('n-links__modal-bcg--visible');
+    overlayModal.classList.toggle('n-links__modal-bcg--visible');
   }
 
   linkModal.addEventListener('click', showModal);
