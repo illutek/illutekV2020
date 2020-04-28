@@ -32,7 +32,10 @@
 		opacity: .3;
 	}
 
-	&__modal-bcg {
+  &__modal-bcg {
+
+    &--visible {
+    opacity: 1;
 		background-color: rgba(map-get($colors, black), .78);
 		z-index: 999;
 		height: 100vh;
@@ -44,10 +47,14 @@
 		flex-direction: column;
 		justify-content: center;
 		overflow: hidden auto;
+  }
+    
 
-		// with js hidden
-		// opacity: 0;
-		// visibility: hidden;
+		&--hidden {
+      opacity: 0;
+		  // visibility: hidden;
+    }
+		
 	}
 
 	&__modal-wrapper {

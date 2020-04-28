@@ -1,5 +1,5 @@
 /**
- * Created by stefan on 01-11-2019.
+ * Created by stefan on 15-04-2020.
  *
  */
 
@@ -11,13 +11,11 @@
     var div_top = $('#top').offset().top;
 
     if (window_top > div_top) {
+      $('.header').addClass('header__remove');
       $('.header__content').addClass('header__content__remove');
-      $('.header__video').addClass('header__video__remove');
-      $('.header__overlay').addClass('header__overlay__remove');
     } else {
+      $('.header').removeClass('header__remove');
       $('.header__content').removeClass('header__content__remove');
-      $('.header__video').removeClass('header__video__remove');
-      $('.header__overlay').removeClass('header__overlay__remove');
     }
 
   }
