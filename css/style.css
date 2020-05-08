@@ -77,9 +77,12 @@ h2 {
   line-height: 1.1; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block; }
+
+p:not(:last-child) {
+  margin-bottom: 1.5rem; }
 
 /* roboto-300 - latin */
 @font-face {
@@ -230,6 +233,27 @@ body {
 .r-links {
   text-align: center; }
 
+.association {
+  background-color: rgba(5, 180, 249, 0.8);
+  margin-bottom: 6rem; }
+
+.footer {
+  padding-bottom: 2rem; }
+  .footer__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem; }
+    .footer__top p {
+      margin-bottom: 0px; }
+    .footer__top-social {
+      display: flex; }
+      .footer__top-social a + a {
+        margin-left: 1rem; }
+
+.addicted {
+  margin-right: 2rem; }
+
 .c-site-name {
   font-size: 3.8rem;
   font-weight: 700; }
@@ -308,7 +332,9 @@ body {
 
 .n-links__modal-bcg--hidden {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  position: absolute;
+  top: 0; }
 
 .n-links__modal-wrapper {
   width: 90vw;
@@ -344,3 +370,22 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 1rem; }
+
+.association__node {
+  padding: 4rem 0; }
+
+.association__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem; }
+
+.association__title {
+  color: black;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.1; }
+
+.association__body {
+  width: 80%;
+  margin: 0 auto; }

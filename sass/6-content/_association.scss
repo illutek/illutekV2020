@@ -1,0 +1,32 @@
+// /////////////////////////
+// @@ NODE ASSOCIATION
+// ////////////////////////
+
+.association {
+
+  &__node {
+    padding: 4rem 0;
+
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $margin-b;
+  }
+
+  &__title {
+    color: map-get($colors, black);
+    margin-bottom: $margin-b;
+    text-align: center;
+    font: {
+      size: 2rem;
+    };
+    line-height: 1.1;
+  }
+
+  &__body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

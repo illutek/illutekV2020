@@ -47,7 +47,13 @@ h2 {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	display: block;
+}
+
+p {
+	&:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
 }

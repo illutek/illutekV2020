@@ -1,0 +1,30 @@
+// /////////////////////////
+// @@ REGION FOOTER 
+// ////////////////////////
+
+.footer {
+  padding-bottom: 2rem;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $margin-bb;
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    &-social {
+      display: flex;
+
+      a + a {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.addicted {
+  margin-right: 2rem;
+}

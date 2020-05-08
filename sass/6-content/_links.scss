@@ -59,7 +59,9 @@
 
 		&--hidden {
       opacity: 0;
-		  visibility: hidden;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
     }
 		
 	}
