@@ -9,9 +9,5 @@ libraries:
   - illutekv2/java
 
 regions:
-  mobilemenu: "Mobiel menu"
-  primary_menu: "Main menu"
-  region_first: "First region"
-  contenthome: "home content"
   content: Content
-  portfolio: Portfolio
+  why: "Why Drupal"
