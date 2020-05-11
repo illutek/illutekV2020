@@ -1,0 +1,9 @@
+<!--  -->
+<?php
+function illutekv2_preprocess_field(&$vars) {
+  if ($vars['element']['#field_name'] == 'field_links_screenshot') {
+    foreach($vars['items'] as $key => $item){
+      $vars['items'][ $key ]['content']['#item_attributes']['class'][] = 'n-links__img';
+    }
+  }
+}
