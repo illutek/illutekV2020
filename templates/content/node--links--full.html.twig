@@ -70,18 +70,37 @@
  *   in different view modes.
  */
 #}
-<article{{attributes.addClass('n-links__node')}}>
+<article{{attributes.addClass('n-links__modal-bcg--visible')}}>
 
-	<div class="n-links__tile">
-		<!-- left-top corner of the screenshot -->
-		<div class="n-links__screenshot-piece">
-			{{ content.field_links_screenshot }}
+	<div class="n-links__modal-wrapper">
+
+		<div class="c-close-btn" onclick="history.go(-1)">
+			<img class="c-close-btn" src="{{ base_path ~ directory }}/images/close-btn.png" alt="close button">
 		</div>
 
-		<div class="n-links__title">
-			<a class="n-links__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
-		</div>
+		<div class="n-links__modal-content">
+			<div class="n-links__modal-screenshot">
 
-	</div>
+				{{ content.field_links_screenshot }}
+			</div>
 
-</article>
+			<div class="n-links__modal-title">
+				{{ label }}
+			</div>
+
+
+			<div{{content_attributes.addClass('n-links__modal-body')}}>
+				{{ content.body }}
+			</div>
+
+			<div class="n-links__modal-social">
+				<a class="n-links__modal-link n-links__modal-link--url" href="{{ content.field_links_site }}">{{ content.field_links_site	}}</a>
+
+				{% if content.field_links_github[0] is not empty %}
+					<a class="n-links__modal-link n-links__modal-link--git" href="{{ content.field_links_github }}">{{ content.field_links_github }}</a>
+				{% endif %}
+
+			</div>
+
+
+		</article>

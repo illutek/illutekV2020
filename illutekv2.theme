@@ -11,3 +11,10 @@ function illutekv2_preprocess_field(&$vars) {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess().
+ */
+function illutekv2_preprocess(array &$variables, $hook) {
+  $variables['base_path'] = base_path();
+}

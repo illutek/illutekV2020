@@ -291,13 +291,15 @@ body {
 .n-links__node {
   margin-bottom: 6rem; }
 
+.n-links__link {
+  color: white; }
+
 .n-links__tile {
   position: relative;
   display: inline-block;
   width: 30rem; }
 
 .n-links__title {
-  color: white;
   font-size: 4rem;
   position: absolute;
   top: 0;
@@ -311,13 +313,12 @@ body {
 
 .n-links__screenshot-piece {
   background-color: #05b4f9; }
-
-.n-links__img {
-  opacity: .3; }
+  .n-links__screenshot-piece img {
+    opacity: .3; }
 
 .n-links__modal-bcg--visible {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.78);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
   height: 100vh;
   width: 100vw;
@@ -329,12 +330,6 @@ body {
   justify-content: center;
   overflow: hidden auto;
   transition: all .8s; }
-
-.n-links__modal-bcg--hidden {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 0; }
 
 .n-links__modal-wrapper {
   width: 90vw;
