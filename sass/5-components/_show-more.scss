@@ -1,0 +1,25 @@
+// /////////////////////////
+// @@ SHOW MORE BTN
+// ////////////////////////
+
+.c-show-more {
+  position: relative;
+  z-index: 999;
+  padding: 1rem 2rem;
+  border: 1px solid map-get($colors, white);
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: $margin-b;
+
+  &::after {
+    content: "Nog meer";
+  }
+
+  &--less {
+
+    &::after {
+      content: "Toch weer minder";
+    }
+
+  }
+}

@@ -5,6 +5,8 @@ globalstyle:
 
 java:
   js:
-    js/header.js: {}
+    dist/js/all.js: {}
+    # js/header.js: {}
+    # js/more-links.js: {}
   dependencies:
     - core/jquery

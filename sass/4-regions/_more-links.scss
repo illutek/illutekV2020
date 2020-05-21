@@ -1,0 +1,15 @@
+// /////////////////////////
+// @@ REGION MORE-LINKS
+// ////////////////////////
+
+.r-more-links {
+  text-align: center;
+  display: none;
+  height: 0;
+  margin-top: 3rem;
+
+  &--visible {
+    display: block;
+    height: auto;
+  }
+}

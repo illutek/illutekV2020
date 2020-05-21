@@ -15,6 +15,20 @@
   {% include directory ~ '/templates/partials/why-drupal.html.twig' %}
 </section>
 
-<section class="r-why-drupal" id="why-drupal">
+<section class="r-links">
   {% include directory ~ '/templates/partials/links.html.twig' %}
 </section>
+
+<section class="r-more-links">
+  <div class="container">
+    {{ page.morelinks }}
+  </div>
+</section>
+
+<section class="association">
+  {% include directory ~ '/templates/partials/association.html.twig' %}
+</section>
+
+<footer class="footer">
+  {% include directory ~ '/templates/partials/footer.html.twig' %}
+</footer>
